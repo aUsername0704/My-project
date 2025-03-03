@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="HealthBarBackground" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Art/Ruby/UI/UIHealthFrame.png?fileID=21300000&amp;guid=e04807cd45105ec409b00463fe6ab7b1&amp;type=3#UIHealthFrame&quot;); width: 336px; height: 138px; -unity-background-scale-mode: scale-to-fit; top: 59px; opacity: 1; right: 1588px; left: -4px; bottom: 884px; position: absolute;">
+        <engine:VisualElement name="HealthBarContainer" style="flex-grow: 1; height: 146px; width: 328px;">
+            <engine:VisualElement name="HealthBar" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Art/Ducko/UI/UIHealthBar%201.png?fileID=2800000&amp;guid=f786ebccaf05ee446892e88b2c8f35e5&amp;type=3#UIHealthBar 1&quot;); position: absolute; height: 46px; width: 164px; top: 42px; left: 143px;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="CharacterPotrait" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Art/Ducko/UI/CharacterPortrait.png?fileID=2800000&amp;guid=0332b35b8fe3cf8458eb0558889493d1&amp;type=3#CharacterPortrait&quot;); -unity-background-scale-mode: scale-to-fit; position: absolute; height: 117px; top: 10px; width: 155px; left: 6px; rotate: 0; translate: 0 0; transform-origin: center;" />
+    </engine:VisualElement>
+</engine:UXML>
