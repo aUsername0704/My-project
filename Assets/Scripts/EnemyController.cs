@@ -52,4 +52,17 @@ public class EnemyController : MonoBehaviour
         
         rigidbody2d.MovePosition(position); //pomak rigidbodya na novu poziciju
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+        PlayerController player = other.gameObject.GetComponent<PlayerController>(); //uzmi skriptu plyercontroler iz objekta s kojim je doslo do kontakta
+        if (player != null) {
+
+            player.ChangeHealth(-10);
+        
+        }
+    }
+
+
 }
