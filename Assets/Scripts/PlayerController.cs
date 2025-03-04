@@ -114,10 +114,11 @@ public class PlayerController : MonoBehaviour
 
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth); //mathf.clamp funkcija za odredjivanje raspona hpa u ovom slucaju -> prvi parametar - vrijednost koja se mora ograniciti, drugi parametar - minimum, treci je maximum
-        Debug.Log(currentHealth + "/" + maxHealth);//printa hp u log umjesto na ui jer nemam UI sad
-        
+        //Debug.Log(currentHealth + "/" + maxHealth);//printa hp u log umjesto na ui jer nemam UI sad
+        UIHandler.instance.SetHealthValue(currentHealth / (float)maxHealth); //omjer trenutnog hp i max hp za healthbar
 
-    
+
+
     }
 
 
