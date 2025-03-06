@@ -3826,7 +3826,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1683035374690773459, guid: 749a9fbc7a844774b8f10bfd14f51898, type: 3}
       propertyPath: vertical
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1683035374690773459, guid: 749a9fbc7a844774b8f10bfd14f51898, type: 3}
       propertyPath: EnemySpeed
@@ -3834,11 +3834,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1683035374690773459, guid: 749a9fbc7a844774b8f10bfd14f51898, type: 3}
       propertyPath: changeTime
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1683035374690773459, guid: 749a9fbc7a844774b8f10bfd14f51898, type: 3}
       propertyPath: horizontal
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683035374690773459, guid: 749a9fbc7a844774b8f10bfd14f51898, type: 3}
+      propertyPath: promjenaOsi
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1683035374690773459, guid: 749a9fbc7a844774b8f10bfd14f51898, type: 3}
       propertyPath: moveChangeTimer
@@ -3874,11 +3878,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7841108094170877208, guid: 749a9fbc7a844774b8f10bfd14f51898, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.15
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 7841108094170877208, guid: 749a9fbc7a844774b8f10bfd14f51898, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.59
+      value: -1.84
       objectReference: {fileID: 0}
     - target: {fileID: 7841108094170877208, guid: 749a9fbc7a844774b8f10bfd14f51898, type: 3}
       propertyPath: m_LocalPosition.z
