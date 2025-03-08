@@ -194,6 +194,7 @@ MonoBehaviour:
   movementSpeed: 6.5
   maxHealth: 5
   currentHealth: 0
+  timeInvincible: 2
 --- !u!50 &1641450776558948298
 Rigidbody2D:
   serializedVersion: 5
@@ -255,7 +256,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.006309986, y: -0.77819026}
+  m_Offset: {x: 0.013315678, y: -0.77819026}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -265,5 +266,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.80785847, y: 0.6872709}
+  m_Size: {x: 0.7929106, y: 0.6872709}
   m_EdgeRadius: 0
