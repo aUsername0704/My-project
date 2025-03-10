@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public GameObject projectilePrefab;
     //public InputAction LeftAction;
     //sustav za kretanje
     public InputAction MoveAction;
@@ -131,11 +131,20 @@ public class PlayerController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth); //mathf.clamp funkcija za odredjivanje raspona hpa u ovom slucaju -> prvi parametar - vrijednost koja se mora ograniciti, drugi parametar - minimum, treci je maximum
         //Debug.Log(currentHealth + "/" + maxHealth);//printa hp u log umjesto na ui jer nemam UI sad
         UIHandler.instance.SetHealthValue(currentHealth / (float)maxHealth); //omjer trenutnog hp i max hp za healthbar
-
-
-
     }
 
+
+    void Launch() {
+
+        GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+        //tri paramaetra za Instantiate naredbu - projectilePrefab stvara kopiju gameObjecta u poziciji definiranoj u drugom parametru s rotacijom definiranom u trecem parametru
+        //Quaternion.identity je defaultna rotacija, tj. nema rotacije - matematicka operacija
+
+        ProjectileScript projectile = projectileObject.GetComponent<Projectile>();
+        projectile.Launch(moveDireciton, 300);
+        animator.SetTrigger("Launch");
+
+    }
 
 
 }
