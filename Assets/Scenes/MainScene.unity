@@ -4164,6 +4164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pero
       objectReference: {fileID: 0}
+    - target: {fileID: 1620665940866059717, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
       propertyPath: maxHealth
       value: 50

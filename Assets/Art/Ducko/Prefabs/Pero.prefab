@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1641450776558948298}
   - component: {fileID: 3892694372188137804}
   - component: {fileID: 5868536446825726643}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249a460feaee60a4d99b691b649d3197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 8454605515264645796, guid: 9a24e11b477eca847b4f08551aca4b64, type: 3}
   MoveAction:
     m_Name: Move
     m_Type: 0

@@ -103,6 +103,13 @@ public class PlayerController : MonoBehaviour
                 isInvincible = false; //gasi invincibility
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Launch();
+        }
+
+
     }
 
     void FixedUpdate() {//zaustavlja lika da ulazi u rigidbody drugog lika tako da nema cudnog treskanja pri kontaktu
@@ -140,8 +147,8 @@ public class PlayerController : MonoBehaviour
         //tri paramaetra za Instantiate naredbu - projectilePrefab stvara kopiju gameObjecta u poziciji definiranoj u drugom parametru s rotacijom definiranom u trecem parametru
         //Quaternion.identity je defaultna rotacija, tj. nema rotacije - matematicka operacija
 
-        ProjectileScript projectile = projectileObject.GetComponent<Projectile>();
-        projectile.Launch(moveDireciton, 300);
+        Projectile projectile = projectileObject.GetComponent<Projectile>();
+        projectile.Launch(moveDirection, 300);
         animator.SetTrigger("Launch");
 
     }
