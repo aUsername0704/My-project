@@ -16,6 +16,9 @@ public class EnemyController : MonoBehaviour
     public float promjenaOsi = 5.0f;
     float timerOsi;
 
+    bool broken = true;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -51,6 +54,13 @@ public class EnemyController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!broken) {
+
+
+            return;
+        }
+
+
         Vector2 position = rigidbody2d.position; //postion sprema poziciju rigidbodya
       
             if (vertical) //ako je vertical true
@@ -82,6 +92,15 @@ public class EnemyController : MonoBehaviour
             player.ChangeHealth(-10);
         
         }
+    }
+
+    public void Fix() {
+
+        broken = false; //enemy je popravljen
+        rigidbody2d.simulated = false; //gasi fiziku rigidbodya neprijatelja kako vise nebi mogao bit pogodjen ili sudarat se s igracem
+
+    
+    
     }
 
 
