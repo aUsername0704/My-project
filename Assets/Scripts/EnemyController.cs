@@ -98,8 +98,8 @@ public class EnemyController : MonoBehaviour
 
         broken = false; //enemy je popravljen
         rigidbody2d.simulated = false; //gasi fiziku rigidbodya neprijatelja kako vise nebi mogao bit pogodjen ili sudarat se s igracem
-
-    
+        animator.SetTrigger("Fixed");
+  
     
     }
 
