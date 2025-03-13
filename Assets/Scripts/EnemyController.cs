@@ -18,6 +18,8 @@ public class EnemyController : MonoBehaviour
 
     bool broken = true;
 
+    //BoxCollider2D boxCollider;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +28,7 @@ public class EnemyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         timer = changeTime; //pocetak timera ce biti change Time varijabla jer je pocetak i nije se jos nista promjenilo
         timerOsi = promjenaOsi;
+        //boxCollider = GetComponent<BoxCollider2D>();
           
     }
 
@@ -98,6 +101,7 @@ public class EnemyController : MonoBehaviour
 
         broken = false; //enemy je popravljen
         rigidbody2d.simulated = false; //gasi fiziku rigidbodya neprijatelja kako vise nebi mogao bit pogodjen ili sudarat se s igracem
+        //boxCollider.enabled = true;
         animator.SetTrigger("Fixed");
   
     
