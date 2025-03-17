@@ -3596,6 +3596,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 708973041636090311, guid: db1e37c5c2c4768479289a0d8e03a40f, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4250342
+      objectReference: {fileID: 0}
+    - target: {fileID: 708973041636090311, guid: db1e37c5c2c4768479289a0d8e03a40f, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.026997745
+      objectReference: {fileID: 0}
+    - target: {fileID: 708973041636090311, guid: db1e37c5c2c4768479289a0d8e03a40f, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.56451076
+      objectReference: {fileID: 0}
     - target: {fileID: 3224129519013302084, guid: db1e37c5c2c4768479289a0d8e03a40f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.44
@@ -3639,6 +3651,14 @@ PrefabInstance:
     - target: {fileID: 5246819012963769434, guid: db1e37c5c2c4768479289a0d8e03a40f, type: 3}
       propertyPath: m_Name
       value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246819012963769434, guid: db1e37c5c2c4768479289a0d8e03a40f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577308356278930174, guid: db1e37c5c2c4768479289a0d8e03a40f, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4240,6 +4260,42 @@ PrefabInstance:
     - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
       propertyPath: timeInvincible
       value: 1.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: talkAction.m_Name
+      value: Talk
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: adebcc7c-39b3-426a-8673-6884583c1af6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[10].m_Id
+      value: 7e670415-b2f0-47e4-8130-2ac3efeec5f4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/e
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[10].m_Path
+      value: <Keyboard>/e
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: talkAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Talk
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579826330595757003, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[10].m_Action
+      value: Move
       objectReference: {fileID: 0}
     - target: {fileID: 3892694372188137804, guid: 0137a20a4db797d43b3bce06bf03546a, type: 3}
       propertyPath: m_Size.x

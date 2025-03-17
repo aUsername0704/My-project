@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public float timeInvincible = 2.0f;
     bool isInvincible;
     float damageCooldown;
+    public InputAction talkAction;
 
     Animator animator;
     Vector2 moveDirection = new Vector2(1,0);
@@ -40,6 +41,8 @@ public class PlayerController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
 
         animator = GetComponent<Animator>();
+        talkAction.Enable();
+
     }
 
     // Update is called once per frame
@@ -109,6 +112,12 @@ public class PlayerController : MonoBehaviour
             Launch();
         }
 
+        if (Input.GetKeyDown(KeyCode.E)) {
+
+            FindFriend();
+                }
+
+
 
     }
 
@@ -153,5 +162,18 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void FindFriend() {
+
+        RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, moveDirection, 1.5f, LayerMask.GetMask("NPC"));
+        //raycasthit2D je klasa koja sadrzi informacije o koliziji izmedju raycasta i nekog drugog objekta, ova verzija ima 4 parametra
+        //prvi parametar je pocetna pozicija raycasta, drugi je smjer raycasta, treci je udaljenost do koje raycast ide, cetvrti je layermask koji definira s kojim slojem se raycast sudara
+        if (hit.collider != null) {
+
+            Debug.Log("Raycast has hit the object" + hit.collider.gameObject);
+        
+        }
+    }
+
 
 }
+
