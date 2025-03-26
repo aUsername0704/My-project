@@ -167,10 +167,16 @@ public class PlayerController : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, moveDirection, 1.5f, LayerMask.GetMask("NPC"));
         //raycasthit2D je klasa koja sadrzi informacije o koliziji izmedju raycasta i nekog drugog objekta, ova verzija ima 4 parametra
         //prvi parametar je pocetna pozicija raycasta, drugi je smjer raycasta, treci je udaljenost do koje raycast ide, cetvrti je layermask koji definira s kojim slojem se raycast sudara
+
         if (hit.collider != null) {
 
-            Debug.Log("Raycast has hit the object" + hit.collider.gameObject);
-        
+        NPC character = hit.collider.GetComponent<NPC>();
+        if(character != null)
+            {
+                UIHandler.instance.DisplayDialogue();
+
+            }
+
         }
     }
 
